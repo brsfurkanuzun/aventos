@@ -1,0 +1,77 @@
+/* LiquidGlassIntro.css */
+
+.liquid-container {
+  min-height: 100vh;
+  min-width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to bottom right, #1a1a1a, #333, #555);
+  position: relative;
+  overflow: hidden;
+}
+
+.liquid-wrapper {
+  position: relative;
+  width: 100%;
+  max-width: 80rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Arkadaki AVENTOS yazısı */
+.aventostext {
+  color: #ffffff;
+  font-size: 8rem;
+  line-height: 1;
+  opacity: 1;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  font-weight: 700;
+  user-select: none;
+}
+
+/* Öndeki Liquid Glass 360° yazısı */
+.liquid-text {
+  font-size: 16rem;
+  line-height: 1;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0.9),
+    #f05a28,
+    rgba(255, 255, 255, 0.9)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 200%;
+  animation: liquidFlow 4s ease-in-out infinite;
+  text-shadow: 0 6px 25px rgba(0, 0, 0, 0.5);
+  position: relative;
+  width: 100%;
+  text-align: center;
+  font-weight: 800;
+  user-select: none;
+}
+
+/* Liquid efekt animasyonu */
+@keyframes liquidFlow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Responsive */
+@media (max-width: 640px) {
+  .aventostext,
+  .liquid-text {
+    font-size: 3rem;
+  }
+}

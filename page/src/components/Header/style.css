@@ -1,0 +1,51 @@
+.header-bar {
+  width: 100%;
+  max-width: 1200px;
+  background-color: transparent;
+  position: sticky;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  top: 0;
+  height: 50px;
+  margin-bottom: 0px;
+  z-index: 100;
+}
+.menu-items-container {
+  display: flex;
+  gap: 50px;
+}
+.menu-item {
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: color 0.3s ease;
+  list-style: none;
+  user-select: none;
+}
+.menu-item:hover {
+  color: #f05a28;
+  text-shadow: 0 0 5px #000;
+}
+.logo {
+  height: 15px;
+}
+.glass-container {
+  padding: 0 50px;
+}
+.header-container {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 50px;
+  z-index: 10;
+  margin-bottom: 0px;
+}
+ul {
+  margin: 0;
+  padding: 0;
+}
